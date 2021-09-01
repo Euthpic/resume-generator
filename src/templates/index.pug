@@ -41,7 +41,7 @@ block content
                   li.detail= detail
   section.section-item.personal-projects
     .section-header
-      .section-title= "个人项目"
+      .section-title= "项目经历"
       .section-headerline
     .section-content
       each project in personalProjects
@@ -68,20 +68,10 @@ block content
           .section-subitem-subheader.sub-text= edu.education + " - " + edu.major
   section.section-item.others
     .section-header
-      .section-title= "自我评价"
+      .section-title= "专业技能"
       .section-headerline
     .section-content
       ul.supplements
         each supplement in others.supplements
           li.supplement= supplement
-  section.section-item.others
-    .section-header
-      .section-title= "其他链接"
-      .section-headerline
-    .section-content
-      ul.supplements
-        each socialLink in others.socialLinks
-          li.sociallink
-            i(class=socialLink.icon)
-            span.sociallink-text= socialLink.text
-            a(href=socialLink.url target="_blank" rel="noopener noreferrer")= socialLink.url
+ 
