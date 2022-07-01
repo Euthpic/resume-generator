@@ -2,43 +2,42 @@
   "title": "resume-generator",
   "info": {
     "name": "陈先生",
-    "status": "目前在职",
+    "status": "随时到岗",
     "location": "广州",
     "intention": "Java开发",
-    "phone": "***",
-    "email": "***@qq.com",
-    "languages": ["Java", "Scala", "MySQL","Spring","K8s"]
+    "phone": "x",
+    "email": "x@x.com",
+    "blog":"https://euthpic.github.io",
+    "languages": [
+      "Java",
+      "Scala"
+    ]
   },
   "experiences": [
     {
       "company": "广州快塑电子科技有限公司",
-      "range": "2020.7 ~ 至今",
+      "range": "2020.7 ~ 2022.2",
       "position": "Java(Scala)开发工程师",
-      "techs": ["Scala", "MySQL", "Redis","Kafka","Zookeeper", "Elasticsearch","K8s"],
+      "techs": [
+        "Scala",
+        "Java",
+        "MySQL",
+        "Redis",
+        "Kafka",
+        "Zookeeper",
+        "Elasticsearch",
+        "K8s"
+      ],
       "projects": [
         {
           "name": "主要工作职责及内容",
           "url": "",
           "details": [
-            "负责'快塑网'小程序/公众号/App,智能报价,CRM的优化迭代.其中'快塑网'是我司触达客户的主要途径,智能报价是我司对外提供的核心服务.",
-            "参与搭建k8s环境,及后续的日常维护及优化.",
+            "主要负责比价平台小程序/公众号/App的开发维护,智能报价模块,CRM模块的优化迭代,优化核心链路.同时也参与物流,订单,金融模块的开发工作",
+            "负责搭建ES搜索服务,在官网和小程序上为sku/报价搜索提供支持.",
+            "参与搭建k8s环境,帮助团队熟悉新环境.",
             "参与搭建Jenkins构建平台,优化构建流程.",
-            "负责为团队做技术调研(如es,k8s,apisix,telepresence,skywalking等),解决技术难题."
-          ]
-        }
-      ]
-    },
-    {
-      "company": "",
-      "range": "2019.10 ~ 2020.6",
-      "position": "",
-      "techs": [],
-      "projects": [
-        {
-          "name": "赋闲在家",
-          "url": "",
-          "details": [
-           
+            "为团队进行技术调研(如es,k8s,apisix,telepresence等),研究技术难题,参与自研微服务框架的升级适配."
           ]
         }
       ]
@@ -46,16 +45,20 @@
     {
       "company": "广州至真信息科技有限公司",
       "range": "2018.11 ~ 2019.9",
-      "position": "Java开发工程师(校招实习+正式岗)",
-      "techs": ["Java","Mysql","Redis"],
+      "position": "Java开发工程师(实习+正式)",
+      "techs": [
+        "Java",
+        "Mysql",
+        "Redis"
+      ],
       "projects": [
         {
           "name": "主要工作职责及内容",
           "url": "",
           "details": [
-            "对接并维护广告主的广告,配合运营排查广告收益,转化等异常的原因",
-            "抓取各平台(facebook,google,tiktok等)的广告成本及收益数据,供投放师优化方案",
-            "内部收益等报表开发及优化,供运营便捷查看数据及优化运营方案"
+            "对接并维护广告主的广告,配合运营排查广告收益,转化等异常的原因.",
+            "抓取各平台(facebook,google,tiktok等)的广告成本及收益数据,供投放师优化方案.",
+            "内部收益等报表开发及优化,供运营便捷查看数据及优化运营方案."
           ]
         }
       ]
@@ -66,35 +69,37 @@
       "name": "'快塑网'小程序",
       "url": "",
       "details": [
-        "在本人接触该项目两三个月后,因为表现出色得到领导赏识,成为该项目主要维护人",
-        "报价模块由于综合性强,需要利用很多模块的资源,长期以来占用较多的资源,又因逻辑复杂,链路较长而优化不易.本人花了一周去梳理优化点,最终提升了该链路60%~80%的查询效率,大大降低了系统负荷(如果当时有skywalking等链路追踪工具,优化难度会大大降低)."
+        "具体工作包括实现定制报价单,记录行为日志,改进登录流程,报价搜索,在运营后台展示销售线索,维护用料等功能.",
+        "丰富了客户表达需求的途径,提升销售人员对客户的跟进效率."
       ],
-      "desc": "'快塑网'是我司触达客户的主要途径,主要功能是展示市场报价,专属报价单以及收集客户线索.",
+      "desc": "'快塑网'是公司触达客户的主要途径,主要功能是展示市场报价,定制专属报价单,实盘下单以及收集客户线索.",
+      "techs": []
+    },
+    {
+      "name": "ES搜索服务",
+      "url": "",
+      "details": [
+        "具体工作包括封装ES的读写API与初始化配置,解决与自研框架的冲突问题,重写原来用Redis实现的搜索组件,设计实现新的报价搜索模型,用canal实时同步MySQL的数据到ES.",
+        "用ES实现的组件效率比原先的高,响应搜索结果也更快,减轻了Redis压力;新的搜索模型搜索结果更加准确,方便用户找到目标sku与报价,提高了用户粘度."
+      ],
+      "desc": "负责搭建ES服务,替换原来用Redis实现的搜索组件,并设计实现sku与报价的搜索模型",
       "techs": []
     },
     {
       "name": "k8s环境搭建",
       "url": "",
-      "details": ["具体工作包括部署业务项目,mysql,redis,zookeeper,kafka,elasticsearch,canal,rocketmq等中间件;梳理分配各个pod所需资源;梳理并提取项目的配置文件到configmap;改造项目框架以对接新的日志系统loki及监控系统promethus等.",
-      "整个过程从立项到验收上线共持续三个多月,迁移之后并未出现重大问题,系统平稳运行,且系统资源利用更加合理,比旧环境能容纳更多的项目,获得了老板和领导的公开赞扬"],
-      "desc": "负责把生产环境从阿里云迁到腾讯云,部署方式从docker compose升级到k8s.",
-      "techs": []
-    },
-    {
-      "name": "Jenkins构建平台",
-      "url": "",
       "details": [
-        "梳理了原有构建流程的不足,项目间的依赖关系,以此为基础设计新的构建方案",
-        "解决了多分支隔离,多环境隔离,并行构建等问题,有效提高了构建效率."
+        "具体工作包括制定业务项目的helm模板,部署mysql,redis,zookeeper,kafka,elasticsearch,canal,rocketmq等中间件;梳理分配各个pod所需资源;梳理并提取项目的配置文件到configmap;改造项目框架以对接新的日志系统loki及监控系统promethus;定位并修复测试回归过程中出现的历史BUG等.",
+        "改造完成后系统资源利用更加合理,比旧环境能容纳更多的项目.在扩容,负载均衡,故障切换,监控等方面的操作也更加便利."
       ],
-      "desc": "部署方式变更后,原有构建脚本不再适用,因此着手开发Jenkins构建脚本",
+      "desc": "负责把生产环境从阿里云迁到腾讯云,部署方式从docker compose升级到k8s.",
       "techs": []
     }
   ],
   "education": [
     {
       "school": "华南农业大学",
-      "major": "全日制本科 理学学士",
+      "major": "全日制本科",
       "education": "计算机科学与技术",
       "startTime": "2015-09",
       "endTime": "2019-06"
@@ -104,12 +109,10 @@
     "supplements": [
       "熟悉Java,Scala,熟悉JVM内存模型",
       "熟悉Java集合框架,J.U.C并发包原理",
-      "熟悉容器与云原生技术,熟悉Docker,K8s环境下的项目部署及日常排障.",
+      "熟悉容器与云原生技术,熟悉Linux,Docker,K8s环境下的项目部署及日常排障.",
       "熟悉MySQL结构及设计原理,熟练sql语句的应用及优化",
       "熟悉计算机网络原理,熟悉tcp协议,http协议",
-      "熟悉Spring框架的结构及设计原理",
-      "熟悉Redis,Kafka,Zookeeper,Elasticsearch等中间件的原理和使用"
+      "熟悉Redis,Kafka,Zookeeper,Elasticsearch,canal等中间件的原理和使用"
     ]
-
   }
 }

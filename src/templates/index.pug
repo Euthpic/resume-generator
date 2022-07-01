@@ -15,6 +15,10 @@ block header
         i.fas.fa-envelope
         span.email
           a(href="mailto:" + info.email)= info.email
+    .info-item.sub-text
+      span.sub-item
+        i.fas.fa-blog
+        span.blog= info.blog
     .info-item.languages
       each value in info.languages
         span.language= value
